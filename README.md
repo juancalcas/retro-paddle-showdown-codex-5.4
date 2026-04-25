@@ -66,4 +66,4 @@ http://localhost:8000
 
 ## Autor
 
-Proyecto creado y publicado desde Codex con apoyo del usuario.
+Proyecto creado y publicado desde Codex 
