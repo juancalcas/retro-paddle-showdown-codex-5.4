@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Paddle Showdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="film"></div>
+    <main class="stage">
+      <section class="marquee">
+        <p class="eyebrow">Un duelo de tinta, reflejos y rebotes</p>
+        <h1>Retro Paddle Showdown</h1>
+        <p class="subtitle">
+          Controla la barra izquierda con <strong>W / S</strong> o
+          <strong>↑ / ↓</strong>. La barra derecha juega sola.
+        </p>
+      </section>
+
+      <section class="arena-wrap">
+        <img
+          class="side-head side-head-left"
+          src="./assets/player.png"
+          alt="Jugador bueno del lado izquierdo"
+        />
+
+        <div class="cabinet">
+          <div class="hud">
+            <div>
+              <span class="label">Jugador</span>
+              <strong id="playerScore">0</strong>
+            </div>
+            <div class="center-callout">
+              <span id="status">Presiona espacio para empezar</span>
+            </div>
+            <div>
+              <span class="label">Rival</span>
+              <strong id="aiScore">0</strong>
+            </div>
+          </div>
+
+          <div class="playfield-shell">
+            <canvas
+              id="game"
+              width="960"
+              height="540"
+              aria-label="Juego de ping pong retro"
+            ></canvas>
+            <div class="corner-badge">Primera a 5</div>
+          </div>
+        </div>
+
+        <img
+          class="side-head side-head-right"
+          src="./assets/cpu.png"
+          alt="CPU malo del lado derecho"
+        />
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
